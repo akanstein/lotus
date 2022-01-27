@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/lotus_green.svg" type="image/x-icon">
+    <title>Lotus</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.9.2/tailwind.min.css"> -->
+    <link rel="stylesheet" href="/css/custom.css">
+    <!-- Small CSS to Hide elements at 1520px size -->
+    <script src="js/tailwind.js"></script>
+
+</head>
+
+<body class="overflow-x-hidden antialiased" x-data="{ showModal : false }">
+
+    <!-- BEGIN HERO SECTION -->
+    <div class="relative items-center justify-center w-full md:h-auto">
+        <!-- Header Section -->
+        <header class="relative w-full h-24">
+            <div class="flex items-center justify-between h-full w-full px-5 mx-auto sm:justify-between xl:px-20">
+
+                <div class="flex items-center font-semibold">
+
+                    <a href="/" class="relative flex items-center inline-block h-5 font-semibold">
+                        <img class="w-8" src="/assets/lotus_green.svg" alt="">
+                    </a>
+
+                    <nav id="nav"
+                        class="absolute top-0 left-0 z-50 flex flex-col items-center justify-between hidden w-full h-64 pt-5 mt-24 text-sm text-black bg-white border-t border-gray-200 md:w-auto md:flex-row md:h-24 md:bg-transparent md:mt-0 md:border-none md:py-0 md:flex md:relative">
+                        <a href="/about.html"
+                            class="ml-0 mr-0 duration-100 md:ml-12 md:mr-3 lg:mr-8 transition-color">About
+                            Us</a>
+                        <a href="/#services"
+                            class="mr-0 duration-100 md:mr-3 lg:mr-8 transition-color hover:text-green-500">Services</a>
+                        <a href="/subsidiaries.html"
+                            class="mr-0  duration-100 md:mr-3 lg:mr-8 transition-color hover:text-green-500 ">Subsidiaries</a>
+                        <a href="/social-impact.html"
+                            class=" duration-100 md:mr-3 lg:mr-8 transition-color hover:text-green-500 ">Social
+                            Impact
+                        </a>
+                        <a href="/blog.html"
+                            class=" duration-100 transition-color hover:text-green-500 text-[#00BD00]">Blog</a>
+                        <div class="flex flex-col block w-full font-semibold border-t border-gray-200 md:hidden">
+                            <button @click="showModal = !showModal"
+                                class="hd relative inline-block w-full px-8 py-5 text-sm leading-none text-center text-white"
+                                style="background-color: #00BD00;">Get In Touch</button>
+                        </div>
+                    </nav>
+                </div>
+
+                <div
+                    class="absolute left-0 flex-col items-center justify-center hidden w-full pb-8 mt-48 border-b border-gray-200 md:relative md:w-auto md:bg-transparent md:border-none md:mt-0 md:flex-row md:p-0 md:items-end md:flex md:justify-between">
+                    <button
+                        class="hd relative z-40 inline-block w-auto h-full px-8 py-5 text-sm font-bold leading-none text-white transition-all transition duration-100 duration-300 fold-bold lg:bg-white sm:w-full lg:shadow-none hover:shadow-xl"
+                        style="background-color: #00BD00;" @click="showModal = !showModal">Get In Touch</button>
+                </div>
+
+                <div id="nav-mobile-btn"
+                    class="absolute top-0 right-0 z-50 block w-6 mt-8 mr-10 cursor-pointer select-none md:hidden sm:mt-10">
+                    <span class="block w-full h-1 mt-2 duration-200 transform bg-gray-800 rounded-full sm:mt-1"></span>
+                    <span class="block w-full h-1 mt-1 duration-200 transform bg-gray-800 rounded-full"></span>
+                </div>
+
+            </div>
+        </header>
+        <!-- End Header Section-->
+    </div>
+    <!-- HERO SECTION END -->
+
+    <!-- Technical Partners Section -->
+    <div id="features" class="relative w-full xl:px-20 px-5 py-14">
+        <h1 class="hd text-black lg:text-[40px] text-4xl font-bold mb-20">News Room</h1>
+        <div class="flex flex-wrap items-start lg:justify-start md:justify-between">
+            <div class="lg:w-[30%] md:w-[45%] mb-8 lg:mr-8">
+                <div class="xl:max-w-[396px] xl:x-full xl:h-[420px] w-full h-auto">
+                    <img class="w-full h-[250px] object-cover mb-2" src="/assets/blackandwhite.png" alt="">
+                    <a class="hd text-xl font-bold hover:text-[#00BD0080]"
+                        href="https://farmersreviewafrica.com/innovative-agricultural-development-company-launches-in-ghana-to-offset-35-billion-annual-cost-of-food-imports-to-africa/">
+                        Innovative agricultural development company launches in Ghana to offset $35 Billion annual cost
+                        of food imports to Africa.
+                    </a>
+                    <p class="text-xs mt-2">January 03, 2021</p>
+                </div>
+            </div>
+            <div class="lg:w-[30%] md:w-[45%] w-full mb-8 lg:mr-8">
+                <div class="xl:max-w-[396px] xl:x-full xl:h-[420px] w-full h-auto">
+                    <img class="w-full h-[250px] object-cover mb-2" src="/assets/conservation_agriculture.jpg" alt="">
+                    <a class="hd text-xl font-bold hover:text-[#00BD0080]"
+                        href="https://africabusinesscommunities.com/agribusiness/news/lotus-ecoculture-launches-in-ghana/">
+                        Lotus Ecoculture launches in Ghana
+                    </a>
+                    <p class="text-xs mt-2"> 01, January, 2022</p>
+                </div>
+            </div>
+            <div class="lg:w-[30%] md:w-[45%] w-full mb-8">
+                <div class="xl:max-w-[396px] xl:x-full xl:h-[420px] w-full h-auto">
+                    <img class="w-full h-[250px] object-cover mb-2" src="/assets/landscene.png" alt="">
+                    <a class="hd text-xl font-bold hover:text-[#00BD0080]"
+                        href="https://www.freshplaza.com/article/9383794/we-can-create-a-solution-to-food-security-by-forming-long-term-partnerships-with-retailers-buyers-and-processors/">
+                        "We can create a solution to food security by forming long-term partnerships with retailers,
+                        buyers and processors,”
+                    </a>
+                    <p class="text-xs mt-2"> 16, December, 2021</p>
+                </div>
+            </div>
+
+        </div>
+        <!-- <div class="my-8 text-center mx-auto">
+            <a class="text-[#00BD00] text-base font-semibold" href="">View More —</a>
+        </div> -->
+    </div>
+    <!-- End Technical Partners Section -->
+
+    <footer class="md:px-20 px-7 pt-24 pb-16 text-white">
+        <div class="w-full flex xl:flex-row flex-col-reverse justify-between items-start">
+
+            <div class="flex md:flex-row flex-col-reverse flex-wrap xl:mb-0 mb-5">
+                <div class="hd md:w-48 w-full mb-8">
+                    <a class="flex mb-3">
+                        <img class="w-5" src="/assets/lotus.svg" alt="">
+                        <p class="text-sm ml-2">Lotus Ecoculture</p>
+                    </a>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="flex items-center justify-between md:-mt-2 -mt-12 mb-3 w-32">
+                        <a href="https://instagram.com/lotusecoculture?utm_medium=copy_link"><img class="w-5"
+                                src="/assets/insta.png" alt=""></a>
+                        <a href="https://twitter.com/lotusecoculture?s=11"><img class="w-5" src="assets/twitter.png"
+                                alt=""></a>
+                        <a href="https://www.linkedin.com/company/lotus-ecoculture"><img class="w-5"
+                                src="assets/linkedin.png" alt=""></a>
+                    </div>
+                    <p class="text-sm font-light">© Lotus Ecoculture 2021</p>
+                </div>
+                <div class="md:w-48 w-full mb-8">
+                    <p class="text-sm font-black mb-3">Subsidiaries</p>
+
+                    <a href="" class="flex mb-3">
+                        <p class="text-sm font-medium">Mepe Farms Gh Limited</p>
+                    </a>
+                    <a class="flex mb-3">
+                        <p class="text-sm font-medium">Mepe Produce limited </p>
+                    </a>
+                    <a class="flex mb-3">
+                        <p class="text-sm font-medium">Mepe Grains Limited</p>
+                    </a>
+                    <a class="flex mb-3">
+                        <p class="text-sm font-medium">Plantain Republic</p>
+                    </a>
+                </div>
+                <div class="hd md:w-48 w-full mb-8">
+                    <p class="text-sm font-black mb-3">Company</p>
+
+                    <a href="/about.html" class="flex mb-3">
+                        <p class="text-sm font-light">About Us</p>
+                    </a>
+                    <a href="/#services" class="flex mb-3">
+                        <p class="text-sm font-light">Services</p>
+                    </a>
+                    <a href="/social-impact.html" class="flex mb-3">
+                        <p class="text-sm font-light">Social Impact</p>
+                    </a>
+                    <button @click="showModal = !showModal" class="flex border-0 bg-transparent mb-3">
+                        <p class="text-sm font-light">Get in Touch</p>
+                    </button>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-start justify-center xl:mb-0 mb-14" id="learn-more">
+                <h3 class="hd md:text-2xl text-xl font-bold mb-1 text-white">
+                    Want to know more?
+                </h3>
+                <p class="text-base mb-7">Sign up for our newsletter</p>
+                <form class="flex" id="newsletter">
+                    <input class="border mr-1 md:w-80 w-44 px-3 text-gray-800" type="email" id="email" name="email"
+                        placeholder="youremail@example.com" required>
+                    <button class="btn btn-primary font-semibold text-base" style="height: 50px;">Submit</button>
+                </form>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- Modal Form -->
+    <div x-show="showModal" style="display: none;"
+        class="fixed flex md:items-center items-start md:justify-end justify-center overflow-auto z-50 bg-black bg-opacity-40 left-0 right-0 top-0 bottom-0 min-h-full min-w-full"
+        x-transition:enter="transition ease duration-300" x-transition:enter-start="opacity-0"
+        x-transition:enter-end="opacity-100" x-transition:leave="transition ease duration-300"
+        x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
+        <!-- Modal -->
+        <div x-show="showModal" class="bg-white xl:h-full md:h-[840px] h-auto md:w-[700px] w-11/12 overflow-auto"
+            @click.away="showModal = false" x-transition:enter="transition ease duration-100 transform"
+            x-transition:enter-start="opacity-0 scale-90 translate-y-1"
+            x-transition:enter-end="opacity-100 scale-100 translate-y-0"
+            x-transition:leave="transition ease duration-100 transform"
+            x-transition:leave-start="opacity-100 scale-100 translate-y-0"
+            x-transition:leave-end="opacity-0 scale-90 translate-y-1">
+            <div
+                class="h-full w-full md:px-10 px-5 py-12 bg-[url('/assets/form-bg.png')] bg-no-repeat flex flex-col justify-center">
+                <h3 class="md:text-4xl text-3xl font-bold lg:mb-9 mb-7 xl:mt-10" style="color:#00BD00">
+                    Contact Us
+                </h3>
+                <div class="flex justify-between items-start pb-5 border-b-2 mb-5">
+                    <div>
+                        <p class="text-sm uppercase text-gray-400 mb-1">Contact number: </p>
+                        <a class="md:text-xl text-base hover:text-black" href="tel:+233 55 383 7852">+233 55 383 7852</a>
+                    </div>
+                    <div>
+                        <p class="text-sm uppercase text-gray-400 mb-1">Contact Email: </p>
+                        <a class="md:text-xl text-base hover:text-black" href="mailto:info@lotusecoculture.com">info@lotusecoculture.com</a>
+                    </div>
+                </div>
+                <p class="md:text-[20px] text-sm font-normal mb-8">
+                    For any request, please fill in the following form. Our team <br class="md:block hidden"> will get
+                    back to you as soon as
+                    possible
+                </p>
+
+                <form class="w-full mb-10" id="contact">
+                    <div class="w-full flex justify-between items-center">
+                        <div class="w-[45%]">
+                            <p class="text-sm text-gray-400 mb-5" for="name">NAME</p>
+                            <input class="w-full text-lg border-0 border-b-2 border-[#DEDEDE] bg-transparent outline-0"
+                                type="text" placeholder="Your name" id="name" name="name" required>
+                        </div>
+                        <div class="w-[45%]">
+                            <p class="text-sm text-gray-400 mb-5" for="name">SURNAME</p>
+                            <input class="w-full text-lg border-0 border-b-2 border-[#DEDEDE] bg-transparent outline-0"
+                                type="text" placeholder="Your surname" name="surname" id="surname" required>
+                        </div>
+                    </div>
+                    <div class="w-full mt-10">
+                        <p class="text-sm text-gray-400 mb-5" for="name">EMAIL</p>
+                        <input class="w-full text-lg border-0 border-b-2 border-[#DEDEDE] bg-transparent outline-0"
+                            type="text" placeholder="Your email address" id="email" name="email" required>
+                    </div>
+                    <div class="w-full mt-10">
+                        <p class="text-sm text-gray-400 mb-5" for="name">MESSAGE</p>
+                        <textarea class="w-full text-lg border-0 border-2 border-[#DEDEDE] bg-white outline-0"
+                            placeholder="" id="message" name="message" rows="6"></textarea>
+                    </div>
+                    <div class="flex justify-between item-center mt-5">
+                        <button @click="showModal = !showModal" type="button"
+                            class="px-8 py-3 text-sm bg-white border transition-colors duration-150 ease-linear border-gray-200 font-bold hover:bg-gray-50 ">Cancel</button>
+                        <button type="submit" class="btn btn-primary hover:text-gray-500">Send</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
