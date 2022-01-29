@@ -1,0 +1,46 @@
+stages:
+  - publish
+  - deploy
+
+publish_master:
+  # Official docker image.
+  image: docker:latest
+  stage: publish
+  services:
+    - docker:dind
+  before_script:
+    - apk add --no-cache groff less bash jq curl py-pip tzdata
+    - pip install awscli
+    
+  script: 
+    - $(aws ecr get-login --no-include-email --region us-east-2)
+    - docker build -t 813610984481.dkr.ecr.us-east-2.amazonaws.com/lotus-eco:$CI_COMMIT_SHORT_SHA .
+    - docker push 813610984481.dkr.ecr.us-east-2.amazonaws.com/lotus-eco:$CI_COMMIT_SHORT_SHA
+  only:
+    - master
+
+deploy_master:
+  stage: deploy
+  image: registry.gitlab.com/gitlab-examples/kubernetes-deploy
+  environment:
+    name: production
+  script:
+    - kubectl version
+  
+    - git clone https://bloc.hq:$PASSWORD@gitlab.com/bloc.hq/bloc-deployment.git kubernetes
+
+    - cd kubernetes
+
+    - git config --global user.email "chidi.chukwuma@outlook.com"
+
+    - git config --global user.name "bloc.hq"
+
+    - sed -i "s@813610984481.dkr.ecr.us-east-2.amazonaws.com/lotus-eco:[a-z0-9]*@813610984481.dkr.ecr.us-east-2.amazonaws.com/lotus-eco:${CI_COMMIT_SHORT_SHA}@g" lotus-eco/production/web/deployment.yaml
+
+    - kubectl apply -k lotus-eco/production
+
+    - git add --all 
+    - git commit -m "Updated lotus-eco-production images to $CI_COMMIT_SHORT_SHA"
+    - git push
+  only:
+    - master
