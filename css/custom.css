@@ -1,0 +1,170 @@
+@font-face {
+  font-family: "Gelion";
+  src: url('/fonts/Gelion/Gelion-Thin.ttf');
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Gelion";
+  src: url('/fonts/Gelion/Gelion-Light.ttf');
+  font-style: normal;
+  font-weight:300;
+}
+@font-face {
+  font-family: "Gelion";
+  src: url('/fonts/Gelion/Gelion-Regular.ttf');
+  font-weight:400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gelion";
+  src: url('/fonts/Gelion/Gelion-Medium.ttf');
+  font-weight:500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gelion";
+  src: url('/fonts/Gelion/Gelion-SemiBold.ttf');
+  font-weight:600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gelion";
+  src: url('/fonts/Gelion/Gelion-Bold.ttf');
+  font-weight:700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gelion";
+  src: url('/fonts/Gelion/Gelion-Black.ttf');
+  font-weight:900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Atyp Text";
+  src: url('/fonts/Atyp/AtypBLText-Thin.otf');
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Atyp Text";
+  src: url('/fonts/Atyp/AtypBLText-Light.otf');
+  font-style: normal;
+  font-weight:300;
+}
+@font-face {
+  font-family: "Atyp Text";
+  src: url('/fonts/Atyp/AtypBLText-Regular.otf');
+  font-weight:400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Atyp Text";
+  src: url('/fonts/Atyp/AtypBLText-Medium.otf');
+  font-weight:500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Atyp Text";
+  src: url('/fonts/Atyp/AtypBLText-Semibold.otf');
+  font-weight:600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Atyp Text";
+  src: url('/fonts/Atyp/AtypBLText-Bold.otf');
+  font-weight:700;
+  font-style: normal;
+}
+
+body{
+  font-family: "Gelion", sans-serif;
+}
+
+.hd{
+  font-family: "Atyp Text", sans-serif;
+}
+
+
+@media(max-width:1520px) {
+  .left-svg {
+      display: none;
+  }
+}
+
+/* small css for the mobile nav close */
+#nav-mobile-btn.close span:first-child {
+  transform: rotate(45deg);
+  top: 4px;
+  position: relative;
+  background: #a0aec0;
+}
+
+#nav-mobile-btn.close span:nth-child(2) {
+  transform: rotate(-45deg);
+  margin-top: 0px;
+  background: #a0aec0;
+}
+
+.btn, [type=submit].btn{
+  height:40px;
+  width:auto;
+  max-width: max-content;
+  padding:26px 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border:none;
+  font-size: 14px;
+  font-family: "Atyp Text", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-primary, [type=submit].btn-primary{
+  background-color: #00BD00;
+  color: #fff;
+}
+
+.btn-secondary{
+  background-color: #fff;
+  color: #00BD00;
+}
+
+.point{
+  border-left: solid 8px #00BD00;
+  padding-left: 10px;
+}
+
+.section{
+  height: 100vh;
+}
+.section.wh{
+  height: 600px;
+}
+
+footer{
+  background-color: #153451;
+}
+
+[role=tab].active,[role=tab].active:hover {
+  background-color: #00BD001A;
+  border-color: transparent;
+  color: #00BD00;
+}
+
+@media screen and (max-width:768px ){
+  .section.wh{
+    height: 500px;
+  }
+}
+
+@media screen and (max-width:567px ){
+  .section{
+    height: 1200px;
+  }
+  .section.wh{
+    height: 800px;
+  }
+}
