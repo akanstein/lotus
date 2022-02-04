@@ -14,9 +14,8 @@
 <body class="overflow-x-hidden antialiased" x-data="{ showModal : false, profileModal: false }">
 
     <!-- BEGIN HERO SECTION -->
-    <div class="relative items-center justify-center w-full overflow-x-hidden xl:min-h-[600px] md:h-auto bg-no-repeat"
-        style="background-color: #153451;">
-        <div class="h-full w-full bg-[url('/assets/about_header.png')] bg-no-repeat bg-right-bottom lg:pb-32 pb-24">
+    <div class="relative items-center justify-center w-full overflow-x-hidden xl:min-h-[600px] md:h-auto">
+        <div class="h-full w-full bg-[url('/assets/about-hero.png')] bg-no-repeat bg-cover md:bg-center bg-[top_0_right_-12rem] lg:pb-24 md:pb-16 pb-8">
 
             <!-- Header Section -->
             <header class="relative w-full h-24">
@@ -68,21 +67,22 @@
             <!-- End Header Section-->
 
             <div class="flex flex-col mx-auto px-5 xl:px-20">
-                <div class="flex flex-col w-full max-w-xl h-full items-start lg:mt-24 mt-16">
-                    <h1 class="hd text-[#00BD00] text-6xl font-bold mb-10">About Us</h1>
-                    <p class="text-[20px] text-[#F5E0B7] font-medium mb-4 md:w-[41rem] leading-loose tracking-wider">
+                <div class="flex flex-col w-full max-w-lg h-full items-start lg:mt-24 mt-10">
+                    <h1 class="hd text-[#00BD00] md:text-5xl text-4xl font-bold md:mb-10 mb-5">About Us</h1>
+                    <p class="md:text-[20px] text-[15px] font-medium mb-4 md:w-full leading-normal tracking-wide">
                         Lotus Ecoculture is an agricultural development company utilizing arable farmland, innovative
-                        agronomic and agritech solutions, and a fully-mechanized technological process to enhance local
+                        agronomic and agritech solutions and a fully-mechanized technological process to enhance local
                         food production and exports in Africa.
                     </p>
-                    <p class="text-[20px] text-white font-medium md:w-[41rem] leading-loose tracking-wider mb-4">Through
-                        strategic partnerships, we work with necessary stakeholders to aid employment, community
+                    <p class="md:text-[20px] text-[15px] font-medium md:w-full leading-normal tracking-wide mb-4">
+                        Through strategic partnerships, we work with necessary stakeholders to aid employment, community
                         development and Food Security.
+
                     </p>
-                    <p class="text-[20px] text-white font-medium md:w-[41rem] leading-loose tracking-wider mb-8">
-                        We operate Zero chemical, Zero waste operations using only OMRI (Organic Materials Review
-                        Institute) certified inputs, increasing yields by over 30% and delivering worlds best crops to our
-                        partners.
+                    <p class="md:text-[20px] text-[15px] font-medium md:w-full leading-normal tracking-wide md:mb-8">
+                        We operate Zero chemical, Zero waste operations using ony OMRI (Organic Materials Review
+                        Institute) certified inputs, increase yields by over 30% and delivering
+                        world's best crops to our partners.
                     </p>
                 </div>
             </div>
@@ -92,15 +92,63 @@
     </div>
     <!-- HERO SECTION END -->
 
+    <!-- Mission section -->
+    <div class="relative w-full lg:px-24 px-5 lg:py-24 py-20 bg-[#153451]">
+        <div class="lg:max-w-[1100px] mx-auto">           
+            <div class="">
+                <h4 class="hd text-xl font-bold md:mb-5 mb-3" style="color:#00BD00">
+                    Our Goals
+                </h4>
+                <div class="flex items-start mb-5">
+                    <img class="w-5 h-5 mt-2" src="/assets/about_bullet.png" alt="">
+                    <p class="text-[20px] text-[#F5E0B7] ml-5 font-medium md:w-full tracking-wide">
+                        To be the go-to company for cultivation and processing services in Africa.
+                    </p>
+                </div>
+                <div class="flex items-start mb-5">
+                    <img class="w-5 h-5 mt-2" src="/assets/about_bullet.png" alt="">
+                    <p class="text-[20px] text-[#F5E0B7] ml-5 font-medium md:w-full tracking-wide">
+                        To own and operate a chain of efficient and cost-effective large scale farming and processing facility in Africa.
+                    </p>
+                </div>
+                <div class="flex items-start mb-8">
+                    <img class="w-5 h-5 mt-2" src="/assets/about_bullet.png" alt="">
+                    <p class="text-[20px] text-[#F5E0B7] ml-5 font-medium md:w-full tracking-wide">
+                        Using mechanization and biotechnology to achieve highest yields and quality organic crops setting a new standard in Africa.
+                    </p>
+                </div>
+                <div class="flex items-start flex-wrap md:justify-between">
+                    <div class="md:w-[45%] w-full mb- md:mb-0">
+                        <h4 class="hd text-xl font-bold md:mb-5 mb-3" style="color:#00BD00">
+                            Our Mission
+                        </h4>
+                        <p class="text-[20px] text-[#F5E0B7] font-medium md:w-full tracking-wide">
+                            To become a leading agricultural company operating farming and processing activities across West Africa.
+                        </p>
+                    </div>
+                    <div class="md:w-[45%] w-full">
+                        <h4 class="hd text-xl font-bold md:mb-5 mb-3" style="color:#00BD00">
+                            Our Vision
+                        </h4>
+                        <p class="text-[20px] text-[#F5E0B7] font-medium md:w-full tracking-wide">
+                            To bring innovative organic and agronormic growing techniques to the market utilising 100% green farming methods.
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
     <!-- Technical Partners Section -->
-    <div id="features" class="relative w-full lg:px-24 px-5 lg:py-24 py-20">
+    <div id="people" class="relative w-full lg:px-24 px-5 lg:py-24 py-20">
         <div class="lg:max-w-[1100px] mx-auto">
             <h1 class="hd text-5xl font-bold md:mb-8 mb-5" style="color:#00BD00">
                 Our People
             </h1>
             <h3 class="text-3xl font-bold md:mb-14 mb-12">
-                Meet the people that <br>
-                make performance possible.
+                Meet the people who <br>
+                make sustainability possible.
             </h3>
             <div class="">
                 <div class="w-full flex flex-wrap items-center justify-between">
@@ -153,22 +201,21 @@
                             VIEW PROFILE <img class="w-3 h-3 ml-1" src="/assets/arrow.png" alt="">
                         </a>
                     </div>
-                    
                     <div class="lg:max-w-[450px] md:w-[46%] w-full mb-10">
                         <div
                             class="relative xxl:w-[390px] max-w-[390px] min-h-[500px] xl:h-[600px] w-full h-[500px] bg-[#00BD0033] overflow-hidden mb-3">
                             <img class="absolute bottom-0 left-0 w-full object-contain" src="assets/julien.png" alt="">
                         </div>
                         <h3 class="hd text-2xl font-semibold mb-1">Julien Le Brizaut</h3>
-                        <h4 class="text-[#85868C] text-base font-bold uppercase mb-5 ">Supply Chain and Logistics Manager</h4>
+                        <h4 class="text-[#85868C] text-base font-bold uppercase mb-5 ">Supply Chain and Logistics
+                            Manager</h4>
                         <a id="profileToggle4" class="flex items-center text-[#00BD00] text-xs font-bold"
                             href="javascript:void" data-image="assets/julien.png" data-name="Julien Le Brizaut"
                             data-title="Supply Chain and Logistics Manager"
                             data-paragragh1="With a commitment to positively impacting the agri-business sector in Ghana and across West Africa, Julien Le Brizaut strives to incorporate social, economic, and environmental value to agricultural supply chains. With fifteen years of experience in supply chain in France and West Africa specifically Ghana, Cote D'Ivoire, Liberia and Burkina Faso. <br/>"
                             data-paragragh2="He led the implementation of the supply chain structure for the Rossmann Group in West Africa and also served as the groups West African Supply Chain Director. <br> <br>
                             Julien holds a degree in Quality Industrial Logistics and Organistion from the ,Université de Nantes. He has worked closely with many institutions involved in Supply Chain and Logistics in Africa.
-                            "
-                            @click="profileModal = !profileModal">
+                            " @click="profileModal = !profileModal">
                             VIEW PROFILE <img class="w-3 h-3 ml-1" src="/assets/arrow.png" alt="">
                         </a>
                     </div>
@@ -176,8 +223,6 @@
             </div>
         </div>
     </div>
-
-
 
     <!-- End Technical Partners Section -->
 
@@ -275,11 +320,13 @@
                 <div class="flex justify-between items-start pb-5 border-b-2 mb-5">
                     <div>
                         <p class="text-sm uppercase text-gray-400 mb-1">Contact number: </p>
-                        <a class="md:text-xl text-base hover:text-black" href="tel:+233 55 383 7852">+233 55 383 7852</a>
+                        <a class="md:text-xl text-base hover:text-black" href="tel:+233 55 383 7852">+233 55 383
+                            7852</a>
                     </div>
                     <div>
                         <p class="text-sm uppercase text-gray-400 mb-1">Contact Email: </p>
-                        <a class="md:text-xl text-base hover:text-black" href="mailto:info@lotusecoculture.com">info@lotusecoculture.com</a>
+                        <a class="md:text-xl text-base hover:text-black"
+                            href="mailto:info@lotusecoculture.com">info@lotusecoculture.com</a>
                     </div>
                 </div>
                 <p class="md:text-[20px] text-sm font-normal mb-8">
@@ -322,7 +369,6 @@
             </div>
         </div>
     </div>
-    
     <!-- Profile Modal -->
     <div x-show="profileModal" style="display: none;"
         class="fixed flex xl:items-center items-start justify-center py-20 overflow-auto z-50 bg-black bg-opacity-40 left-0 right-0 top-0 bottom-0 w-full h-screen min-h-full min-w-full"
@@ -366,7 +412,8 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/custom.js"></script>
     <script>
         document.getElementById('profileToggle').addEventListener('click', function () {
