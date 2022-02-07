@@ -107,6 +107,12 @@
                         id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts"
                         aria-selected="false">Plantain Republic</button>
                 </li>
+                <li role="presentation">
+                    <button
+                        class="hd inline-block py-4 px-4 md:text-base text-sm whitespace-nowrap font-semibold text-center text-gray-400 border-b-2 border-gray-200 hover:text-gray-600 hover:border-gray-300 "
+                        id="organic-tab" data-tabs-target="#organic" type="button" role="tab" aria-controls="organic"
+                        aria-selected="false">Organic Waste Recycling Technology</button>
+                </li>
             </ul>
         </div>
         <div id="myTabContent">
@@ -233,6 +239,40 @@
                     <button @click="showModal = !showModal" class="btn btn-primary">Get In Touch</button>
                 </div>
             </div>
+            <div class="hidden lg:h-[1080px] h-auto" id="organic" role="tabpanel" aria-labelledby="organic-tab">
+                <img class="w-full lg:max-h-[800px] lg:h-auto md:h-[300px] h-[220px] object-cover" src="assets/organic-waste.png"
+                    alt="">
+                <div class="flex mt-16">
+                    <div class="w-2/6">
+                        <p class="hd font-bold lg:text-4xl text-xl point">
+                            Organic Waste <br> Recycling Technology
+                        </p>
+                    </div>
+
+                    <div class="flex flex-wrap justify-between pl-10 w-4/6 font-medium">
+                        <div class="lg:w-[48%] w-full">
+                            <p class="text-base mb-3 font-normal">
+                                We provide organic waste management solutions for a variety of commercial and industrial
+                                use, from restaurants, housing societies up to large-scale institutions and municipal
+                                corporations. <br>
+                                Our machines have the capacity to process 1MT to 5MT a day of Organic, Garden and other
+                                Green Waste in to Bio-Fertiliser.
+                            </p>
+                        </div>
+                        <div class="lg:w-[48%] w-full">
+                            <p class="text-base mb-3 font-normal">
+                                Utilizing unique microbial technology and cutting edge engineering applications our
+                                composting machines reduce waste volume up to 90% and nutrient-rich compost is created
+                                in the process which goes back to farms.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="mt-10 mb-5">
+                    <button @click="showModal = !showModal" class="btn btn-primary">Get In Touch</button>
+                </div>
+            </div>
         </div>
     </div>
     <!-- End Technical Partners Section -->
@@ -331,11 +371,13 @@
                 <div class="flex justify-between items-start pb-5 border-b-2 mb-5">
                     <div>
                         <p class="text-sm uppercase text-gray-400 mb-1">Contact number: </p>
-                        <a class="md:text-xl text-base hover:text-black" href="tel:+233 55 383 7852">+233 55 383 7852</a>
+                        <a class="md:text-xl text-base hover:text-black" href="tel:+233 55 383 7852">+233 55 383
+                            7852</a>
                     </div>
                     <div>
                         <p class="text-sm uppercase text-gray-400 mb-1">Contact Email: </p>
-                        <a class="md:text-xl text-base hover:text-black" href="mailto:info@lotusecoculture.com">info@lotusecoculture.com</a>
+                        <a class="md:text-xl text-base hover:text-black"
+                            href="mailto:info@lotusecoculture.com">info@lotusecoculture.com</a>
                     </div>
                 </div>
                 <p class="md:text-[20px] text-sm font-normal mb-8">
